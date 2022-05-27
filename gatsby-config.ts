@@ -7,7 +7,7 @@ require("dotenv").config({
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Coming Soon`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://www.atrati.com`
   },
   plugins: [{
     resolve: 'gatsby-plugin-google-analytics',
