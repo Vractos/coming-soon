@@ -5,6 +5,7 @@ require("dotenv").config({
 })
 
 const config: GatsbyConfig = {
+  graphqlTypegen: true,
   siteMetadata: {
     title: `Coming Soon`,
     siteUrl: `https://www.atrati.com`
