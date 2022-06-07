@@ -10,7 +10,9 @@ const config: GatsbyConfig = {
     title: `Coming Soon`,
     siteUrl: `https://www.atrati.com`
   },
-  plugins: [{
+  plugins: [
+    'gatsby-plugin-postcss',
+    {
     resolve: 'gatsby-plugin-google-analytics',
     options: {
       "trackingId": process.env.GOOGLE_ANALYTICS_TRACKING_ID
