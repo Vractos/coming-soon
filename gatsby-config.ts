@@ -15,11 +15,11 @@ const config: GatsbyConfig = {
     options: {
       "trackingId": process.env.GOOGLE_ANALYTICS_TRACKING_ID
     }
-  }, "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", "gatsby-plugin-mdx", {
+  }, "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
-      "path": "./blog/"
+      "path": "./src/images/"
     },
     __key: "images"
   }]
