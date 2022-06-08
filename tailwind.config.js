@@ -9,7 +9,15 @@ module.exports = {
     fontFamily: {
       sans: ['Inter'],
     },
-    extend: {}
+    extend: {
+      colors: {
+        'atrati-gray': '#262C33'
+      },
+      backgroundImage:
+         {
+           'wave': "url('./src/images/svg/Vector.svg)"
+         }
+     }
   },
   plugins: [],
 }
