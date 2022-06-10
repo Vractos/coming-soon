@@ -17,7 +17,7 @@ const Header = () => {
    }, []);
 
   return (
-    <header className='border-2 flex bg-atrati-gray md:bg-white h-20 md:h-24 w-full px-7 md:px-28 items-center'>
+    <header className='flex bg-atrati-gray md:bg-white h-20 md:h-24 w-full px-7 md:px-28 items-center'>
       {width < breakpoint ? (<AtratiLogoMobile />) : (<AtratiLogoComplete />)}
     </header>
   )

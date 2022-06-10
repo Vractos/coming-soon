@@ -1,9 +1,8 @@
 import React from 'react'
-import WaveBg from '../images/svg/WaveBg'
 
 const Layout: React.FC = ({ children }) => {
   return (
-    <div className='w-full h-full flex flex-col'>
+    <div className="min-h-screen flex flex-col ">
         {children}
     </div>
   )
