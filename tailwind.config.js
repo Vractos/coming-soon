@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: [
     "./src/components/*.{js,jsx,ts,tsx}",
@@ -7,10 +9,10 @@ module.exports = {
     "./src/styles/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    fontFamily: {
-      sans: ['Inter'],
-    },
     extend: {
+      fontFamily: {
+        'sans': ['Inter', ...defaultTheme.fontFamily.sans],
+      },
       colors: {
         'atrati-gray': '#262C33'
       },
