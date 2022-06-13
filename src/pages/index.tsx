@@ -7,7 +7,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <Header/>
-      <div className="h-full bg-atrati-gray md:bg-transparent md:bg-[url('../images/wave.svg')]  bg-no-repeat md:bg-right-bottom">
+      <div className="h-full bg-atrati-gray md:bg-transparent md:bg-[url('../images/wave3.svg')]  bg-no-repeat md:bg-right-bottom">
       </div>
     </Layout>
   )
