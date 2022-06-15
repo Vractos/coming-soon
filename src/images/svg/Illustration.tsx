@@ -1,10 +1,10 @@
 import * as React from "react"
 
-const SvgComponent: React.FC = (props) => {
+const Illustration: React.FC = (props) => {
   return (
     <svg
-      width={681}
-      height={640}
+      width={"100%"}
+      height={"100%"}
       viewBox="0 0 681 640"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -406,4 +406,4 @@ const SvgComponent: React.FC = (props) => {
   )
 }
 
-export default SvgComponent
+export default Illustration
