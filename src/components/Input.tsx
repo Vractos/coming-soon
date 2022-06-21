@@ -27,27 +27,19 @@ const Input = () => {
           { setSubmitting, resetForm }: FormikHelpers<Values>
         ) => {
           setTimeout(() => {
-            fetch(`https://maker.ifttt.com/trigger/notify_me/json/with/key/${process.env.GATSBY_IFTTT_TOKEN}`, {
-              method: 'POST',
-              headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-              },
-              body: JSON.stringify({email: values.email})
-            })
-              // Axios({
-              //   method: "post",
+              Axios({
+                method: "post",
 
-              //   url: `https://maker.ifttt.com/trigger/notify_me/json/with/key/${process.env.GATSBY_IFTTT_TOKEN}`,
-              //   data: {
-              //     email: values.email
-              //   },
-              //   headers: {
-              //     'Access-Control-Allow-Origin': '*',
-              //     'Content-Type': 'application/json',
-              //   },
+                url: `https://maker.ifttt.com/trigger/notify_me/json/with/key/${process.env.GATSBY_IFTTT_TOKEN}`,
+                data: {
+                  email: values.email
+                },
+                headers: {
+                  'Access-Control-Allow-Origin': '*',
+                  'Content-Type': 'application/json',
+                },
 
-              // })
+              })
               .then(r => {
                 alert("Obrigado pelo interesse! Assim que estiver tudo pronto, você receberá uma notificação por email.");
                 console.error(r)
