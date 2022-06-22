@@ -7,7 +7,7 @@ require("dotenv").config({
 const config: GatsbyConfig = {
   graphqlTypegen: true,
   siteMetadata: {
-    title: `Coming Soon`,
+    title: `Atrati | Coming Soon`,
     siteUrl: `https://www.atrati.com`
   },
   plugins: [
@@ -18,6 +18,11 @@ const config: GatsbyConfig = {
       "trackingId": process.env.GOOGLE_ANALYTICS_TRACKING_ID
     }
   }, "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+    resolve: 'gatsby-plugin-manifest',
+    options: {
+      "icon": "src/images/icon.png"
+    }
+  },{
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
