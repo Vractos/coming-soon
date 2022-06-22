@@ -8,6 +8,7 @@ export const AtratiLogoComplete: React.FC = (props) => {
       viewBox="0 0 172 40"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className='hidden md:block'
       {...props}
     >
       <path
@@ -119,6 +120,7 @@ export const AtratiLogoMobile: React.FC = (props) => {
       viewBox="0 0 39 50"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className='md:hidden'
       {...props}
     >
       <path
