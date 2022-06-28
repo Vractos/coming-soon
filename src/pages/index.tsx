@@ -2,11 +2,19 @@ import * as React from "react"
 import Input from '../components/Input'
 import Layout from '../components/Layout'
 import Illustration from '../images/svg/Illustration'
+import { Helmet } from "react-helmet"
+
 
 // markup
 const IndexPage = () => {
   return (
     <Layout>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Atrati</title>
+          <link rel="canonical" href="http://mysite.com/example" />
+        </Helmet>
+      <title>Atrati | Em Breve</title>
       <div className="md:hidden w-[75%] h-[50%] flex justify-center mx-auto mb-8">
         <Illustration/>
       </div>

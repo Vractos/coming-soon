@@ -11,6 +11,7 @@ const config: GatsbyConfig = {
     siteUrl: `https://www.atrati.com`
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     'gatsby-plugin-postcss',
     {
     resolve: 'gatsby-plugin-google-analytics',
