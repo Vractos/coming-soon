@@ -28,7 +28,6 @@ const Input = () => {
         ) => {
           const data = new FormData()
           data.append('email', values.email)
-          setTimeout(() => {
             axios({
               method: "post",
               url: process.env.GATSBY_GETFORM_URL,
@@ -40,9 +39,8 @@ const Input = () => {
               })
               .catch(r => {
                 alert("Ops, ocorreu um erro.");
-              });
+              })
             setSubmitting(false)
-          }, 500);
         }}
       >
         {({ isValid, dirty }) => (

@@ -21,7 +21,10 @@ const config: GatsbyConfig = {
   }, "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-plugin-manifest',
     options: {
-      "icon": "src/images/icon.png"
+      name: "Atrati",
+      start_url: `/`,
+      lang: `pt-BR`,
+      icon: "src/images/icon.png"
     }
   },{
     resolve: 'gatsby-source-filesystem',
