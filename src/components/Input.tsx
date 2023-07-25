@@ -54,7 +54,7 @@ const Input = () => {
               className="h-11 rounded-xl w-[65%] md:w-72 pl-4 pr-1 z-0 focus:outline-none"
             />
 
-            <button disabled={!(isValid && dirty)} type='submit' className="h-9 w-24 leading-6 text-[0.75rem] mr-1 text-white rounded-xl bg-black   text-center disabled:opacity-40">Me notifique</button>
+            <button disabled={!(isValid && dirty)} type='submit' className="h-9 w-24 leading-6 text-[0.75rem] mr-1 text-white rounded-xl bg-[#5E17EB]   text-center disabled:opacity-40">Me notifique</button>
           </Form>
         )}
       </Formik>
